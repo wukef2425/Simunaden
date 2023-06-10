@@ -33,7 +33,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/nunito_bold"
-                    android:text="Your Profile"
+                    android:text="个人信息"
                     android:textColor="@color/white"
                     android:textSize="25sp" />
 
@@ -168,7 +168,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:background="@android:color/transparent"
-                        android:text="Change Profile"
+                        android:text="修改"
                         android:textAllCaps="false"
                         android:textColor="@color/teal"
                         android:textSize="17sp"
@@ -236,7 +236,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:background="@android:color/transparent"
-                        android:text="Logout"
+                        android:text="退出登录"
                         android:textAllCaps="false"
                         android:textColor="@color/teal"
                         android:textSize="17sp"

@@ -26,7 +26,7 @@
             android:id="@+id/atv_name_header"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Plant App UI"
+            android:text="Simunaden"
             android:gravity="center_horizontal"
             android:textColor="@android:color/white"
             android:layout_marginTop="5dp"

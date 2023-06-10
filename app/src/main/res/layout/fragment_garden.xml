@@ -3,8 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/white_smoke"
-    tools:context=".menu.favorite.FavoriteFragment">
+    tools:context=".menu.garden.GardenFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,7 +28,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/nunito_bold"
-                android:text="我的植物"
+                android:text="我的花园"
                 android:textColor="@color/white"
                 android:textSize="25sp" />
 
@@ -98,7 +99,7 @@
                             android:layout_gravity="end"
                             android:layout_marginEnd="20dp"
                             android:background="@drawable/bg_button"
-                            android:text="立即查看"
+                            android:text="详情"
                             android:textAllCaps="false" />
                     </LinearLayout>
                 </LinearLayout>
@@ -114,61 +115,31 @@
                 android:background="@drawable/bg_search"
                 android:elevation="50dp">
 
-                <LinearLayout
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animation_view"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:orientation="horizontal"
-                    android:paddingStart="5dp"
-                    android:paddingTop="10dp"
-                    tools:ignore="RtlSymmetry">
+                    android:layout_height="180dp"
+                    app:lottie_autoPlay="false" />
 
-                    <ImageView
-                        android:layout_width="120dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:background="@drawable/img_main" />
+            </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="475dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:elevation="50dp">
 
+                <Button
+                    android:id="@+id/water_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_button"
+                    android:text="浇水"
+                    android:textAllCaps="false" />
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginEnd="10dp"
-                            android:fontFamily="@font/nunito_bold"
-                            android:lines="2"
-                            android:maxLines="2"
-                            android:text="Armeria Maritima Flower"
-                            android:textColor="@color/dark_late_gray"
-                            android:textSize="18sp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:layout_marginEnd="10dp"
-                            android:fontFamily="@font/nunito_bold"
-                            android:lines="1"
-                            android:maxLines="1"
-                            android:text="Italy"
-                            android:textColor="@color/black_soft"
-                            android:textSize="14sp" />
-
-                        <Button
-                            android:layout_width="wrap_content"
-                            android:layout_height="40dp"
-                            android:layout_gravity="end"
-                            android:layout_marginEnd="20dp"
-                            android:background="@drawable/bg_button"
-                            android:text="立即查看"
-                            android:textAllCaps="false" />
-                    </LinearLayout>
-                </LinearLayout>
             </LinearLayout>
         </RelativeLayout>
     </LinearLayout>

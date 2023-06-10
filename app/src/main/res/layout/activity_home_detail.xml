@@ -154,7 +154,7 @@
             android:layout_height="match_parent"
             android:layout_toStartOf="@+id/center"
             android:background="@drawable/bg_button_buy_now"
-            android:text="Buy Now"
+            android:text="立即解锁"
             android:textAllCaps="false"
             android:textSize="16sp" />
 
@@ -170,7 +170,7 @@
             android:layout_height="match_parent"
             android:layout_toEndOf="@+id/center"
             android:background="@android:color/transparent"
-            android:text="Description"
+            android:text="植物百科"
             android:textAllCaps="false"
             android:textColor="@color/dark_late_gray"
             android:textSize="16sp" />
