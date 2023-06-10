@@ -17,6 +17,7 @@ import androidx.fragment.app.FragmentManager;
 
 import com.google.android.material.navigation.NavigationView;
 import com.project.plantappui.menu.favorite.FavoriteFragment;
+import com.project.plantappui.menu.garden.GardenFragment;
 import com.project.plantappui.menu.home.HomeFragment;
 import com.project.plantappui.menu.profile.ProfileFragment;
 
@@ -104,9 +105,10 @@ public class MainActivity extends AppCompatActivity {
             @SuppressLint("NonConstantResourceId")
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                Fragment fragment = null;
                 switch (item.getItemId()) {
-                    case R.id.nav_weeds:
-                        Pesan("Menu Weeds");
+                    case R.id.nav_plants:
+                        fragment = new HomeFragment();
                         break;
                     case R.id.nav_insects:
                         Pesan("Menu Insects");
@@ -114,12 +116,20 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.nav_diseases:
                         Pesan("Menu Diseases");
                         break;
-                    case R.id.nav_products:
-                        Pesan("Menu Products");
+                    case R.id.nav_garden:
+                        fragment = new GardenFragment();
                         break;
                     case R.id.nav_help:
-                        Pesan("Menu Help");
+                        Pesan("Plant App UI written in Java by https://github.com/achmadqomarudin.");
                         break;
+                }
+
+                if (fragment != null) {
+                    fragmentManager = getSupportFragmentManager();
+                    fragmentManager.beginTransaction().replace(R.id.fragment_container, fragment)
+                            .commit();
+                } else {
+                    Log.e(TAG, "Error in creating Fragment");
                 }
 
                 DrawerLayout drawer = findViewById(R.id.drawer_layout);

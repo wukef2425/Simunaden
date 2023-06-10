@@ -46,8 +46,8 @@ public class HomeFragment extends Fragment {
 
     private void initGroupData() {
         groups = new ArrayList<>();
-        groups.add(new Group("Recommended", "More"));
-        groups.add(new Group("Featured Plants", "More"));
+        groups.add(new Group("为你推荐", "更多"));
+        groups.add(new Group("最近上新", "更多"));
     }
 
     private void initPlantData() {

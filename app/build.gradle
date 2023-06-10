@@ -26,6 +26,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    resourcePrefix "app_"
 }
 
 dependencies {
@@ -42,4 +43,5 @@ dependencies {
     implementation 'de.hdodenhof:circleimageview:3.1.0'
     implementation 'com.tbuonomo.andrui:viewpagerdotsindicator:4.1.2'
     implementation 'nl.joery.animatedbottombar:library:1.0.4'
+    implementation "com.airbnb.android:lottie:3.7.0"
 }

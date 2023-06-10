@@ -93,6 +93,7 @@
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.test.espresso:espresso-idling-resource:3.3.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: de.hdodenhof:circleimageview:3.1.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.tbuonomo.andrui:viewpagerdotsindicator:4.1.2@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.airbnb.android:lottie:3.7.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.annotation:annotation-experimental:1.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.android:flexbox:2.0.1@aar" level="project" />
   </component>
